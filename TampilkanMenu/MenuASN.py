@@ -1,6 +1,6 @@
 import os
 import pyfiglet
-from db.DBKon import koneksi as conn
+from db.DBKon import Koneksi as conn
 def PanelAparat():
     os.system('cls' if os.name == 'nt' else 'clear')
     print(pyfiglet.figlet_format("Selamat Datang ASDA"))

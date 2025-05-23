@@ -1,5 +1,6 @@
 import os
 import pyfiglet
+from db.DBKon import Koneksi as conn
 def PanelAdmin():
     os.system('cls' if os.name == 'nt' else 'clear')
     print(pyfiglet.figlet_format("Selamat Datang Admin"))
