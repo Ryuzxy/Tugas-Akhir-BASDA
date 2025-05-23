@@ -1,11 +1,5 @@
 import os
 import pyfiglet
-from MenuAdmin.TambahDataLoginUser import TambahDataLoginUser
-from MenuAdmin.HapusOrUbahDataLoginUser import HapusOrUbahDataLoginUser
-from MenuAdmin.TampilkanDataLoginUser import TampilkanDataLoginUser
-from MenuAdmin.TambahDataInventaris import TambahDataInventaris
-from MenuAdmin.HapusOrUbahDataInventaris import HapusOrUbahDataInventaris
-from MenuAdmin.TampilkanDataInventaris import TampilkanDataInventaris
 def PanelAdmin():
     os.system('cls' if os.name == 'nt' else 'clear')
     print(pyfiglet.figlet_format("Selamat Datang Admin"))
@@ -36,3 +30,26 @@ def PanelAdmin():
     else:
         print("Pilihan tidak valid. Silakan coba lagi.")
         PanelAdmin()
+def TambahDataLoginUser():
+    os.system('cls'if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Tambah Data Login User"))
+
+def HapusOrUbahDataLoginUser():
+    os.system('cls'if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Hapus/Ubah Data Login User"))
+
+def TampilkanDataLoginUser():
+    os.system('cls'if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Tampilkan Data Login User"))
+
+def TambahDataInventaris():
+    os.system('cls'if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Tambah Data Inventaris Desa"))
+    
+def HapusOrUbahDataInventaris():
+    os.system('cls'if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Hapus/Ubah Data Inventaris Desa"))
+    
+def TampilkanDataInventaris():
+    os.system('cls'if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Tampilkan Data Inventaris Desa"))
