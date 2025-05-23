@@ -1,11 +1,6 @@
 import os
 import pyfiglet
-from Databasehelper.DBKon import conn
-from MenuASN import ManagementSuratMasuk
-from MenuASN import ManagementSuratKeluar
-from MenuASN import ManagementDataPenduduk
-from MenuASN import ManagementDataBantuanSosial
-from MenuASN import LaporanBulanan
+from db.DBKon import koneksi as conn
 def PanelAparat():
     os.system('cls' if os.name == 'nt' else 'clear')
     print(pyfiglet.figlet_format("Selamat Datang ASDA"))
@@ -33,3 +28,23 @@ def PanelAparat():
     else:
         print("Pilihan tidak valid. Silakan coba lagi.")
         PanelAparat()
+
+def ManagementSuratMasuk():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Management Surat Masuk"))
+
+def ManagementSuratKeluar():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Management Surat Keluar"))
+
+def ManagementDataPenduduk():  
+    os.system('cls' if os.name == 'nt' else ' clear')
+    print(pyfiglet.figlet_format("Management Data Penduduk"))
+
+def ManagementDataBantuanSosial():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Management Data Bantuan Sosial"))
+
+def LaporanBulanan():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Laporan Bulanan"))
