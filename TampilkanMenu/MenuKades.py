@@ -1,8 +1,5 @@
 import os
 import pyfiglet
-from MenuKades.TambahSuratPengantar import TambahSuratPengantar
-from MenuKades.CekStatusSuratPengantar import CekStatusSuratPengantar
-from MenuKades.CekDataBantuanSosial import CekDataBantuanSosial
 def PanelKades():
     os.system('cls' if os.name == 'nt' else 'clear')
     print(pyfiglet.figlet_format("Selamat Datang Kades"))
@@ -24,3 +21,15 @@ def PanelKades():
     else:   
         print("Pilihan tidak valid. Silakan coba lagi.")
         PanelKades()
+
+def TambahSuratPengantar():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Tambah Surat Pengantar"))
+    
+def CekStatusSuratPengantar():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Cek Status Surat Pengantar"))
+    
+def CekDataBantuanSosial():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(pyfiglet.figlet_format("Cek Data Bantuan Sosial"))
