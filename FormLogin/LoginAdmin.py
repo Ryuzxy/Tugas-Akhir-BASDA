@@ -1,6 +1,8 @@
 import pyfiglet
 import os
+import psycopg2
 from db.DBKon import Koneksi as conn
+from db.DBKon import conn
 from TampilkanMenu.MenuAdmin import PanelAdmin
 def LoginAdmin():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -8,7 +10,7 @@ def LoginAdmin():
     username = input("Masukkan username: ")
     password = input("Masukkan password: ")
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM users WHERE username = %s AND password = %s AND role = 'Admin'", (username, password))
+    cursor.execute("SELECT * FROM users WHERE username = %s AND password = %s AND role = 'admin'", (username, password))
     result = cursor.fetchone()
     if result:
         print("Login berhasil!")

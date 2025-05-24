@@ -1,6 +1,7 @@
 import os
 import pyfiglet
 from db.DBKon import Koneksi as conn
+from db.DBKon import conn
 from TampilkanMenu.MenuASN import PanelAparat
 def LoginAparat():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -8,7 +9,7 @@ def LoginAparat():
     username = input("Masukkan username: ")
     password = input("Masukkan password: ")
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM users WHERE username = %s AND password = %s AND role = 'ASN'", (username, password))
+    cursor.execute("SELECT * FROM users WHERE username = %s AND password = %s AND role = 'asn'", (username, password))
     result = cursor.fetchone()
     if result:
         print("Login berhasil!")
