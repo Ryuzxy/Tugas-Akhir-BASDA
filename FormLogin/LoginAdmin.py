@@ -1,7 +1,5 @@
 import pyfiglet
 import os
-import psycopg2
-from db.DBKon import Koneksi as conn
 from db.DBKon import conn
 from TampilkanMenu.MenuAdmin import PanelAdmin
 def LoginAdmin():
@@ -19,12 +17,10 @@ def LoginAdmin():
         if result:
             print("Login berhasil!")
             cursor.close()
-            conn.close()
             PanelAdmin(username)  # kirim username ke PanelAdmin
         else: 
             print("Login gagal! Anda Bukan Admin Dari System.")
             cursor.close()
-            conn.close()
             input("Tekan Enter untuk mencoba ulang...")
             LoginAdmin()
     except Exception as e:
