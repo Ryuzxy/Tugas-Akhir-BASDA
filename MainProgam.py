@@ -13,5 +13,4 @@ def main():
     os.system('cls' if os.name == 'nt' else 'clear')
     print(pyfiglet.figlet_format("Selamat Datang di SIMANDESA"))
     LOGIN()
-
 main()
