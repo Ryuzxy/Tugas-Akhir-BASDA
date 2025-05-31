@@ -1,9 +1,9 @@
 import os
 import pyfiglet
 from db.DBKon import Koneksi as conn
-def PanelAdmin():
+def PanelAdmin(username):
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(pyfiglet.figlet_format("Selamat Datang Admin"))
+    print(pyfiglet.figlet_format(f"Hallo Admin {username}"))
     print("Silahkan Pilih Menu:")
     print("1.Management Data Login User")
     print("2.Management Data Inventaris Desa")
@@ -21,7 +21,7 @@ def PanelAdmin():
         print("Pilihan tidak valid. Silakan coba lagi.")
         print("Tekan Enter untuk kembali ke menu utama...")
         input()
-        PanelAdmin()
+        PanelAdmin(username)
 def ManagementDataLoginUser():
     os.system('cls' if os.name == 'nt' else 'clear')
     print(pyfiglet.figlet_format("Management Data Login User"))
