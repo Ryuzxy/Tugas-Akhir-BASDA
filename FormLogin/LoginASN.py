@@ -4,7 +4,8 @@ from db.DBKon import conn
 from TampilkanMenu.MenuASN import PanelAparat
 def LoginAparat():
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(pyfiglet.figlet_format("Login ASN"))
+    print(pyfiglet.figlet_format("SIMANDESA"))
+    print("=====================   LOGIN ASN   =====================")
 
     username = input("Masukkan username: ")
     password = input("Masukkan password: ")

@@ -4,8 +4,10 @@ from db.DBKon import conn
 import tabulate
 def PanelAdmin(username):
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(pyfiglet.figlet_format(f"Hallo Admin {username}"))
-    print("Silahkan Pilih Menu:")
+    print(pyfiglet.figlet_format("SIMANDESA"))
+    print(f"Selamat datang, {username}!")
+    
+    print("\nSilahkan Pilih Menu:")
     print("1.Management Data Login User")
     print("2.Management Data Inventaris Desa")
     print("3.Management Data Bantuan Sosial")

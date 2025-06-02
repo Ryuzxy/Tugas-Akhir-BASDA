@@ -4,7 +4,8 @@ from db.DBKon import conn
 from TampilkanMenu.MenuRW import PanelRW
 def LoginRW():
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(pyfiglet.figlet_format("Login RW"))
+    print(pyfiglet.figlet_format("SIMANDESA"))
+    print("=====================   LOGIN RW   =====================")
 
     username = input("Masukkan username: ")
     password = input("Masukkan password: ")

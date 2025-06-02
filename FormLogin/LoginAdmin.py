@@ -4,10 +4,11 @@ from db.DBKon import conn
 from TampilkanMenu.MenuAdmin import PanelAdmin
 def LoginAdmin():
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(pyfiglet.figlet_format("Login Admin"))
+    print(pyfiglet.figlet_format("SIMANDESA"))
+    print("====================   LOGIN ADMIN   ====================")
 
-    username = input("Masukkan username: ")
-    password = input("Masukkan password: ")
+    username = input("\nMasukkan username : ")
+    password = input("Masukkan password : ")
 
     try:
         cursor = conn.cursor()

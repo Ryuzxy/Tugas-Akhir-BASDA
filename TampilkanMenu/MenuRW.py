@@ -5,8 +5,10 @@ import pyfiglet
 from db.DBKon import conn
 def PanelRW(username):
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(pyfiglet.figlet_format(f"Nihau, Pak {username}"))
-    print("Silahkan Pilih Menu:")
+    print(pyfiglet.figlet_format("SIMANDESA"))    
+    print(f"Selamat datang, {username}!")
+    
+    print("\nSilahkan Pilih Menu:")
     print("1.Tambah Surat Pengantar")
     print("2.Cek Data Bantuan Sosial")
     print("3.Keluar System")

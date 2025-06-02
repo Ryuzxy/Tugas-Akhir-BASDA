@@ -4,8 +4,10 @@ import tabulate
 from db.DBKon import conn
 def PanelAparat(username):
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(pyfiglet.figlet_format(f"Hallo ASN {username}"))
-    print("Silahkan Pilih Menu:")
+    print(pyfiglet.figlet_format("SIMANDESA"))    
+    print(f"Selamat datang, {username}!")
+    
+    print("\nSilahkan Pilih Menu:")
     print("1.Management Surat")
     print("2.Keluar System")
     pil = input("Pilih Menu:" )
